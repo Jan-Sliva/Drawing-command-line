@@ -46,6 +46,8 @@ model = tf.keras.Sequential([
     tf.keras.layers.Lambda(lambda x: tf.math.l2_normalize(x, axis=1)) # L2 normalize embeddings
 ])
 
+
+
 # Compile the model
 model.compile(
     optimizer=tf.keras.optimizers.Adam(0.001),
@@ -70,3 +72,4 @@ out_m.close()
 model.save(P.join(FOLDER, "res", "model" + str(NUM) + ".h5"))
 
 backup_history(hist.history, P.join(FOLDER, "res", "hist" + str(NUM) + ".tsv"))
+

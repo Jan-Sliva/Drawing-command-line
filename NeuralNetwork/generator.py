@@ -44,8 +44,7 @@ class genBuilder():
 
 
 class generator(tensorflow.keras.utils.Sequence):
-
-
+    
     def __init__(self, folder, samples, batch_size, test):
         self.folder = folder
         self.batch_size = batch_size

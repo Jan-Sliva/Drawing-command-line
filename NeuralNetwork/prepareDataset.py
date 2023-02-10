@@ -1,14 +1,22 @@
 import os.path as P
-import os
+import os, csv
 
-FOLDER = "D:\\extracted_images"
+FOLDER = "D:\\HASY"
+LABELS_FOLDER = "D:\\HASY\\hasy-data-labels.csv"
 
-for fold in os.listdir(FOLDER):
-    path = P.join(FOLDER, fold)
-    if not P.isdir(path):
-        continue
-    sezn = os.listdir(path)
-    sezn = list(filter(lambda x: not "exp" in x, sezn))
-    print(fold + " " + str(len(sezn)))
+DICT = {}
+
+with open(LABELS_FOLDER, newline='') as csvfile:
+    spamreader = csv.reader(csvfile, delimiter=',')
+    first = True
+    for row in spamreader:
+        if first:
+            first = False
+            continue
+        if not row[2] in DICT.keys():
+            DICT[row[2]] = [row[0]]
+        else:
+            DICT[row[2]].append(row[0])
+
 
 
