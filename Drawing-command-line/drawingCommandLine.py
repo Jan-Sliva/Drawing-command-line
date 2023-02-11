@@ -50,7 +50,8 @@ class drawingCommandLine:
     def processImage(self, img):
         img = self.imagePreprocessing(img)
         self.predIndex = self.network.predict(img)
-        self.window.setQuestion(self.data[self.predIndex]["question"])
+        if self.predIndex != None:
+            self.window.setQuestion(self.data[self.predIndex]["question"])
 
     def processCommand(self, command):
         if command == '$close':

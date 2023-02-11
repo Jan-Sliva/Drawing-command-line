@@ -19,7 +19,7 @@ class siameseNetwork:
     def predict(self, picture):
         picture = np.reshape(picture, (1, 32, 32, 1))
         vec = self.model.predict(picture)
-        min_dist = 1000000000
+        min_dist = 0.1
         ret = None
 
         for i in range(len(self.encodings)):
