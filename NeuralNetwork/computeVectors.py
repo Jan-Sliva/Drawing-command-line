@@ -6,7 +6,7 @@ import random
 import tensorflow as tf
 from pathlib import Path
 import csv
-from genResnet import genBuilder
+from generator import genBuilder
 
 
 FOLDER_MODEL = "E:\\honzi\\OneDrive\\Matfyz\\Zapoctak\\res\\model3.h5"

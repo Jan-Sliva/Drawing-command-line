@@ -13,8 +13,8 @@ from tensorflow.keras import optimizers
 from tensorflow.keras import metrics
 from tensorflow.keras import Model
 
-from resnet50 import DistanceLayer, SiameseModel
-from genResnet import genBuilder
+from siameseModel import DistanceLayer, SiameseModel
+from generator import genBuilder
 
 NUM = 3
 SHAPE = (32, 32, 1)

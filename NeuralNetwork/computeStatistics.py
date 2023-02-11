@@ -6,7 +6,7 @@ import random
 import tensorflow as tf
 from pathlib import Path
 import csv
-from genResnet import genBuilder
+from generator import genBuilder
 import matplotlib.pyplot as plt
 
 def vecDist(a, b):
@@ -22,7 +22,14 @@ NUM = 3
 model = tf.keras.models.load_model(FOLDER_MODEL)
 
 folders = os.listdir(FOLDER_SYMBOLS)
+
+# remove samples which wonť be used in the final product⌈
 folders.remove("mute")
+folders.remove("brightness")
+folders.remove("volume")
+folders.remove("wifi")
+
+
 dict_symbols = {}
 
 for fold in folders:
@@ -44,6 +51,7 @@ for fold in folders:
             coding[fold]["vector"].append(results[i])
 
 middles = {}
+middleFiles = {}
 
 for fold in coding.keys():
     min_dist = 1000000000
@@ -55,7 +63,11 @@ for fold in coding.keys():
         if dist < min_dist:
             min_dist = dist
             middle = coding[fold]["vector"][i]
+            file_name = coding[fold]["file"][i]
     middles[fold] = middle
+    middleFiles[fold] = file_name
+
+print(middleFiles)
 
 def getCategory(categories, vec):
     min_dist = 1000000000
