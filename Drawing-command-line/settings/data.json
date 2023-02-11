@@ -1,0 +1,52 @@
+{
+    "commands" : [
+        {
+            "name" : "Chrome",
+            "picture" : "chrome.png",
+            "question" : "Do you want to open Google Chrome?",
+            "command" : "start chrome"
+        },
+        {
+            "name" : "Close this app",
+            "picture" : "close.png",
+            "question" : "Do you want to close this app?",
+            "command" : "$close"
+        },
+        {
+            "name" : "File explorer",
+            "picture" : "fileExplorer.png",
+            "question" : "Do you want to open the file explorer?",
+            "command" : "start explorer"
+        },
+        {
+            "name" : "OneNote",
+            "picture" : "oneNote.png",
+            "question" : "Do you want to open OneNote?",
+            "command" : "start onenote"
+        },
+        {
+            "name" : "Settings",
+            "picture" : "settings.png",
+            "question" : "Do you want to open the settings of this app?",
+            "command" : "$settings"
+        },
+        {
+            "name" : "Skype",
+            "picture" : "skype.png",
+            "question" : "Do you want to open Skype?",
+            "command" : "start skype"
+        },
+        {
+            "name" : "Texmaker",
+            "picture" : "texmaker.png",
+            "question" : "Do you want to open Texmaker?",
+            "command" :"start texmaker"
+        },
+        {
+            "name" : "VS Code",
+            "picture" : "vscode.png",
+            "question" : "Do you want to open Visual studio Code?",
+            "command" : "code ."
+        }
+    ]
+}

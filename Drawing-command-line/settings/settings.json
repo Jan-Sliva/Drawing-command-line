@@ -1,0 +1,7 @@
+{
+    "crop" : 24,
+    "X" : 192,
+    "Y" : 192,
+    "penWidth" : 2,
+    "network" : "model3.h5"
+}
