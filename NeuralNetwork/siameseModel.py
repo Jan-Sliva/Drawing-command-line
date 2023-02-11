@@ -1,16 +1,7 @@
-import matplotlib.pyplot as plt
-import numpy as np
-import os
-import random
 import tensorflow as tf
-from pathlib import Path
-from tensorflow.keras import applications
 from tensorflow.keras import layers
-from tensorflow.keras import losses
-from tensorflow.keras import optimizers
 from tensorflow.keras import metrics
 from tensorflow.keras import Model
-from tensorflow.keras.applications import resnet
 
 
 class DistanceLayer(layers.Layer):

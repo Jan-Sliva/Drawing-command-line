@@ -1,20 +1,15 @@
-import matplotlib.pyplot as plt
-import numpy as np
-import os, io
+import os
 import os.path as P
-import random
 import tensorflow as tf
-from pathlib import Path
-import csv
 from generator import genBuilder
 import matplotlib.pyplot as plt
 
 def vecDist(a, b):
     return float(tf.reduce_sum(tf.square(a - b), -1))
 
-FOLDER_MODEL = "E:\\honzi\\OneDrive\\Matfyz\\Zapoctak\\res\\model3.h5"
-FOLDER_SYMBOLS = "E:\\honzi\\OneDrive\\Matfyz\\Zapoctak\\dataSet"
-FOLDER_SAVE = "E:\\honzi\\OneDrive\\Matfyz\\Zapoctak"
+FOLDER_MODEL = "C:\\Users\\honzi\\OneDrive\\Matfyz\\Zapoctak\\res\\model3.h5"
+FOLDER_SYMBOLS = "C:\\Users\\honzi\\OneDrive\\Matfyz\\Zapoctak\\dataSet"
+FOLDER_SAVE = "C:\\Users\\honzi\\OneDrive\\Matfyz\\Zapoctak"
 
 BATCH_SIZE = 32
 NUM = 3

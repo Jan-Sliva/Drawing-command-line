@@ -1,16 +1,10 @@
-import matplotlib.pyplot as plt
 import numpy as np
 import os, io
 import os.path as P
 import random
-import tensorflow as tf
-from pathlib import Path
 import csv
-from tensorflow.keras import applications
 from tensorflow.keras import layers
-from tensorflow.keras import losses
 from tensorflow.keras import optimizers
-from tensorflow.keras import metrics
 from tensorflow.keras import Model
 
 from siameseModel import DistanceLayer, SiameseModel

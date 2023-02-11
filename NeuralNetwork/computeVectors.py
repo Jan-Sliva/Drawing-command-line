@@ -1,11 +1,7 @@
-import matplotlib.pyplot as plt
 import numpy as np
 import os, io
 import os.path as P
-import random
 import tensorflow as tf
-from pathlib import Path
-import csv
 from generator import genBuilder
 
 

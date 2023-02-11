@@ -1,7 +1,6 @@
 import tensorflow
 import tensorflow.keras.utils
 import cv2, random, math
-import os.path as P
 import numpy as np
 
 def lmap(*args):
