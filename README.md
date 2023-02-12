@@ -17,7 +17,7 @@ Moje síť bere na vstupu obrázky velikosti 32x32. Na ně aplikuje 3 konvoluce 
 ## Triplet loss
 K trénovaní sítě jsem použil triplet loss. Dataset jsem rozdělil do trojic, kde v každé trojici na dvou obrázcích je to samé ($A$ a $P$) a na třetím obrázku je něco jiného ($N$). Rovnice pro loss pak vypadá
 
-$$\mathcal  L (A,\, P,\, N)= max(\|f(A) - f(P)\|^2 - \|f(A) - f(N)\|^2 + \alpha, \, 0)$$
+$$\mathcal  L (A, P, N)= max(\|f(A) - f(P)\|^2 - \|f(A) - f(N)\|^2 + \alpha,  0)$$
 kde $f(A)$, $f(P)$, $f(N)$ jsou zakódování obrázků, $\alpha$ je nastavitelné kladná hodnota, která určuje minimální rozpětí mezi stejnými a rozdílnými páry
 
 ## Dataset
@@ -74,7 +74,7 @@ Aplikace funguje pomocí eventů, kdy například potvrzení obrázku spustí k�
 1. viz body 4. a 5. předchozí sekce
 2. pro nakreslení obrázku viz body 1., 2. a 3. předchozí sekce
 
-## Defaultní symboli
+## Defaultní symboly
 - V aplikaci je defaultně přednastveno 7 symbolů s příkazy na Windows 10/11. Pokud budete tento program používatna jiném operačním systému, musíte změnit tyto příkazy
 - Obrázky, které jsou defaultně přednastaveny jsem nakreslil pomocí dotykového pera. Přesnost můžete zvýšit tím, že tyto obrázky nahradíte vlastnoručně nakreslenými. Každý totiž ty symboli kreslí trochu jinak. Nahrazení obrázků obzvláště doporučuji, pokud aplikaci používáte bez elektronického pera.
 - Ve složce `Drawing-command-line/pictures` je ještě dalších 5 obrázků, které jsem používal při trénování neuronové sítě
