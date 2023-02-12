@@ -25,12 +25,6 @@
             "command" : "start onenote"
         },
         {
-            "name" : "Settings",
-            "picture" : "settings.png",
-            "question" : "Do you want to open the settings of this app?",
-            "command" : "$settings"
-        },
-        {
             "name" : "Skype",
             "picture" : "skype.png",
             "question" : "Do you want to open Skype?",
