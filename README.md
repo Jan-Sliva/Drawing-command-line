@@ -43,6 +43,8 @@ Aplikace funguje pomocí eventů, kdy například potvrzení obrázku spustí k�
 
 # Uživatelská dokumentace
 
+Doporučená verze Pythonu je 3.10.10
+
 ## Použití
 1. Spusťe `Drawing-command-line/main.py`
 2. Nakreslete symbol patřící k akci, kterou chcete spustit
@@ -79,3 +81,6 @@ Aplikace funguje pomocí eventů, kdy například potvrzení obrázku spustí k�
 - Obrázky, které jsou defaultně přednastaveny jsem nakreslil pomocí dotykového pera. Přesnost můžete zvýšit tím, že tyto obrázky nahradíte vlastnoručně nakreslenými. Každý totiž ty symboli kreslí trochu jinak. Nahrazení obrázků obzvláště doporučuji, pokud aplikaci používáte bez elektronického pera.
 - Ve složce `Drawing-command-line/pictures` je ještě dalších 5 obrázků, které jsem používal při trénování neuronové sítě
 
+# Převzatý kód
+- https://keras.io/examples/vision/siamese_network/
+- https://www.tensorflow.org/addons/tutorials/losses_triplet
