@@ -31,6 +31,8 @@ class canvas(QtWidgets.QLabel):
 
         self.leftStylus = False
 
+        self.acceptImageKey = True
+
     @staticmethod
     def QPixmapToArray(pixmap):
         size = pixmap.size()
@@ -56,11 +58,14 @@ class canvas(QtWidgets.QLabel):
 
 
     def acceptImage(self):
-        pict = self.pixmap()
-        pict = canvas.QPixmapToArray(pict)
-        self.processImage(pict)
+        if self.acceptImageKey:
+            self.acceptImageKey = False
+            pict = self.pixmap()
+            pict = canvas.QPixmapToArray(pict)
+            self.processImage(pict)
 
-        self.clearCanvas()
+            self.clearCanvas()
+            self.acceptImageKey = True
 
     def endMove(self):
         self.last_x = None
@@ -76,7 +81,7 @@ class canvas(QtWidgets.QLabel):
             self.clearCanvas()
 
     def mouseMoveEvent(self, e: QtGui.QMouseEvent) -> None:
-        if (e.buttons() & Qt.LeftButton):
+        if (e.buttons() & Qt.LeftButton) and (not self.zamek.isActive()):
             if self.last_x is None:
                 self.last_x = e.x()
                 self.last_y = e.y()
@@ -96,10 +101,8 @@ class canvas(QtWidgets.QLabel):
             self.endMove()
 
     def tabletEvent(self, e: QtGui.QTabletEvent) -> None:
-        global Správce
-        
         if e.type() == QEvent.TabletPress:
-            if e.button() == Qt.RightButton:
+            if (e.button() == Qt.MidButton) or (e.button() == Qt.RightButton):
                 self.acceptImage()
 
             elif e.button() == Qt.LeftButton:
