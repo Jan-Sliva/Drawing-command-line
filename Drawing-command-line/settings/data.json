@@ -1,46 +1,46 @@
 {
     "commands" : [
         {
-            "name" : "Chrome",
-            "picture" : "chrome.png",
-            "question" : "Do you want to open Google Chrome?",
-            "command" : "start chrome"
-        },
-        {
             "name" : "Close this app",
-            "picture" : "close.png",
+            "pictures" : "close",
             "question" : "Do you want to close this app?",
             "command" : "$close"
         },
         {
+            "name" : "VS Code",
+            "pictures" : "vs-code",
+            "question" : "Do you want to open Visual studio Code?",
+            "command" : "code . &"
+        },
+        {
+            "name" : "Terminal",
+            "pictures" : "cmd",
+            "question" : "Do you want to open terminal?",
+            "command" : "konsole&"
+        },
+        {
+            "name" : "Google Chrome",
+            "pictures" : "chrome",
+            "question" : "Do you want to open Google Chrome?",
+            "command" : "google-chrome&"
+        },
+        {
             "name" : "File explorer",
-            "picture" : "fileExplorer.png",
+            "pictures" : "file",
             "question" : "Do you want to open the file explorer?",
-            "command" : "start explorer"
-        },
-        {
-            "name" : "OneNote",
-            "picture" : "oneNote.png",
-            "question" : "Do you want to open OneNote?",
-            "command" : "start onenote"
-        },
-        {
-            "name" : "Skype",
-            "picture" : "skype.png",
-            "question" : "Do you want to open Skype?",
-            "command" : "start skype"
+            "command" : "dolphin&"
         },
         {
             "name" : "Texmaker",
-            "picture" : "texmaker.png",
+            "pictures" : "texmaker",
             "question" : "Do you want to open Texmaker?",
-            "command" :"start texmaker"
+            "command" :"texmaker&"
         },
         {
-            "name" : "VS Code",
-            "picture" : "vscode.png",
-            "question" : "Do you want to open Visual studio Code?",
-            "command" : "code ."
+            "name" : "Xournal",
+            "pictures" : "xournal",
+            "question" : "Do you want to open Xournal?",
+            "command" : "xournalpp&"
         }
     ]
 }
