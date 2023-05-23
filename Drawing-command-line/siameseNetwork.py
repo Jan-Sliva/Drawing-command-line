@@ -11,10 +11,11 @@ class siameseNetwork:
     def computeDist(a, b):
         return float(reduce_sum(square(a - b), -1))
 
-    def __init__(self, weights_path, pictures):
+    def __init__(self, weights_path, pictures, indeces):
         self.model = load_model(P.join("models", weights_path))
         self.pictures = pictures
         self.encodings = self.model.predict(np.array(self.pictures))
+        self.indeces = indeces
 
     def predict(self, picture):
         picture = np.reshape(picture, (1, 32, 32, 1))
@@ -28,4 +29,7 @@ class siameseNetwork:
                 min_dist = dist
                 ret = i
         
-        return ret
+        if ret != None:
+            return self.indeces[ret]
+        else:
+            return None

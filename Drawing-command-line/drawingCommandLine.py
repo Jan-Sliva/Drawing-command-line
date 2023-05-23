@@ -25,12 +25,18 @@ class drawingCommandLine:
         self.crop = sett["crop"]
 
         pictures = []
+        indeces = []
+        i = 0
 
         for el in self.data:
-            picPath = P.join("pictures", el["picture"])
-            pictures.append(drawingCommandLine.readPicture(picPath))
+            for pic in os.listdir(P.join("pictures", el["pictures"])):
+                picPath = P.join("pictures", el["pictures"], pic)
+                pictures.append(drawingCommandLine.readPicture(picPath))
+                indeces.append(i)
+            i += 1
 
-        self.network = siameseNetwork(sett["network"], pictures)
+
+        self.network = siameseNetwork(sett["network"], pictures, indeces)
 
         self.predIndex = None
 
