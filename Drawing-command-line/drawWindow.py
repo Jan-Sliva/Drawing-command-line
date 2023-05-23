@@ -13,7 +13,10 @@ class drawWindow(QtWidgets.QMainWindow):
 
         self.setWindowFlag(Qt.FramelessWindowHint) # hide the title bar
 
-        self.processResponse = processResponse
+        if processResponse != None:
+            self.processResponse = processResponse
+        else:
+            self.processResponse = lambda x: None
         self.canvasSize = canvasSize
         self.penWidth = penWidth
         self.processImage = processImage
