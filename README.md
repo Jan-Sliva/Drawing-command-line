@@ -85,7 +85,7 @@ Doporučená verze Pythonu je 3.10.10
 
 
 ## Úprava symbolů
-1. Symboli jsou uloženy ve složce `Drawing-command-line/pictures`, zde je můžete libovolně upravovat
+1. Symboly jsou uloženy ve složce `Drawing-command-line/pictures`, zde je můžete libovolně upravovat
 2. Aplikace po každém spuštění načte obrázky z této složky, a pomocí neuronové sítě je zakóduje do 32-prvkového vektoru
 
 # Převzatý kód
