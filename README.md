@@ -47,8 +47,8 @@ Doporučená verze Pythonu je 3.10.10
 
 ## Kreslení na plátno
 - pomocí pera
-    - levé tlačítko vymaže celé plátno
-    - pravé tlačítko potvrdí obrázek a smaže plátno
+    - dolní tlačítko vymaže celé plátno
+    - horní tlačítko potvrdí obrázek a smaže plátno
 - pomocí myši
     - pro kreslení držte levé tlačítko
     - prostřední tlačítko vymaže celé plátno
