@@ -57,7 +57,7 @@ Doporučená verze Pythonu je 3.10.10
 ## Přidávání symbolů
 1. Spusťte `Drawing-command-line/main-drawPicture.py`
 2. Zadejte jméno podsložky `Drawing-command-line/pictures`, do které chcete nakreslené obrázky ukládat
-3. Otevře se plátno, nakreslete na něj symbol, pravým tlačítkem potvrďte
+3. Otevře se plátno, nakreslete na něj symbol, potvrďte
 4. Symbol se automaticky uloží do zvolené podsložky
 5. Nakreslete kolik dalších obrázků chcete. Všechny se uloží do zvolené podsložky
 6. Otevřete `Drawing-command-line/settings/data.json`
@@ -70,7 +70,7 @@ Doporučená verze Pythonu je 3.10.10
 ## Samotné použití
 1. Spusťe `Drawing-command-line/main.py`
 2. Nakreslete symbol patřící k akci, kterou chcete spustit
-3. Potvrďte pravým tlačítkem
+3. Potvrďte
 4. Pokud se potvrzený obrázek podobá některému ze symbolů v aplikaci, tak se místo plátna objeví otázka, jestli chcete spustit danou akci
 5. Po klinutí na Yes nebo No se na místo otázky vrátí zpět plátno
 6. Pro vypnutí aplikace nakreslete křížek
