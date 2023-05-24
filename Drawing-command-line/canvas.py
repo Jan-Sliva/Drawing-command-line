@@ -102,7 +102,7 @@ class canvas(QtWidgets.QLabel):
 
     def tabletEvent(self, e: QtGui.QTabletEvent) -> None:
         if e.type() == QEvent.TabletPress:
-            if (e.button() == Qt.MidButton) or (e.button() == Qt.RightButton):
+            if (e.button() == Qt.MidButton):
                 self.acceptImage()
 
             elif e.button() == Qt.LeftButton:
