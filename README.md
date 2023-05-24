@@ -1,6 +1,8 @@
 # Drawing-command-line
 Vytvořil jsem aplikace, která umožňuje ovládat počítač pomocí kreslení symbolů. Když uživatel nakreslí například ikonu file exploreru, otevře se file explorer. Aplikace je primárně zaměřená na notebook s dotykovým displejem, ale funguje i pomocí klasického kreslení myší.
 
+[Dokumentace](#uživatelská-dokumentace)
+
 # Siamská síť
 
 K rozpoznávání obrázku používám siamskou neuronovou síť. Tato architektura zákoduje obrázek do konstantně velkého vektoru. Podobnost obrázků určí jako vzdálenost zakódovaných vektorů. Tu vypočítám jako součet druhých mocnin rozdílů složek. Čím menší vzdálenost, tím jsou si obrázky podobnější.
@@ -45,6 +47,14 @@ Aplikace funguje pomocí eventů, kdy například potvrzení obrázku spustí k�
 
 Doporučená verze Pythonu je 3.10.10
 
+## Úprava nastavení aplikace
+1. Otevřete `Drawing-command-line/settings/settings.json`
+2. Zde můžete upravit následující věci
+    - `X`, `Y` - rozměry plátna
+    - `crop` - velikost ořezu obrázku před posláním do neuronové sítě
+    - `penWidth` - šířka pera
+    - `network` - název souboru obsahující model neuronové síte, tento soubor musí být uložen ve složce `Drawing-command-line/models`
+
 ## Kreslení na plátno
 - pomocí pera
     - dolní tlačítko vymaže celé plátno
@@ -74,15 +84,6 @@ Doporučená verze Pythonu je 3.10.10
 4. Pokud se potvrzený obrázek podobá některému ze symbolů v aplikaci, tak se místo plátna objeví otázka, jestli chcete spustit danou akci
 5. Po klinutí na Yes nebo No se na místo otázky vrátí zpět plátno
 6. Pro vypnutí aplikace nakreslete křížek
-
-## Upravování nastavení aplikace
-1. Otevřete `Drawing-command-line/settings/settings.json`
-2. Zde můžete upravit následující věci
-    - `X`, `Y` - rozměry plátna
-    - `crop` - velikost ořezu obrázku před posláním do neuronové sítě
-    - `penWidth` - šířka pera
-    - `network` - název souboru obsahující model neuronové síte, tento soubor musí být uložen ve složce `Drawing-command-line/models`
-
 
 ## Úprava symbolů
 1. Symboly jsou uloženy ve složce `Drawing-command-line/pictures`, zde je můžete libovolně upravovat
