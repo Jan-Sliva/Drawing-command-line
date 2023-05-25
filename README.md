@@ -15,17 +15,26 @@ Doporučená verze Pythonu je 3.10.10
 1. Pokud nemáte, nainstalujte si Python a Git
 2. Otevřete příkazovou řádku ve složce, kde chcete mít aplikaci uloženou
 3. Naklonujte repozitář z githubu
-`git clone https://github.com/Jan-Sliva/Drawing-command-line`
+
+    `git clone https://github.com/Jan-Sliva/Drawing-command-line`
+
 4. Vytvořte virtuální prostředí Pythonu a spusťte ho
-`python -m venv DCL-venv`
-`DCL-venv\Scripts\activate`
+
+    `python -m venv DCL-venv`\
+    `DCL-venv\Scripts\activate`
+
 5. Nainstalujte do prostředí potřebné packages
-`python -m pip install -r Drawing-command-line\requirements.txt`
+
+    `python -m pip install -r Drawing-command-line\requirements.txt`
+
 6. Přejděte do složky `Drawing-command-line\Drawing-command-line`
-`cd Drawing-command-line\Drawing-command-line`
+
+    `cd Drawing-command-line\Drawing-command-line`
+
 7. Dále v dokumentaci je třeba spustit soubory `Drawing-command-line/main-drawPicture.py` a `Drawing-command-line/main.py`, to se dělá takto:
-`python main-drawPicture.py`
-`python main.py`
+
+    `python main-drawPicture.py`\
+    `python main.py`
 
 ## Úprava nastavení aplikace
 1. Otevřete `Drawing-command-line/settings/settings.json`
@@ -77,17 +86,26 @@ The recommended version of Python is 3.10.10
 1. Install Python and Git, if you don't have them 
 2. Open a command prompt in the folder where you want to store the application
 3. Clone the repository from github
-`git clone https://github.com/Jan-Sliva/Drawing-command-line`
+
+    `git clone https://github.com/Jan-Sliva/Drawing-command-line`
+
 4. Create a Python virtual environment and run it
-`python -m venv DCL-venv`
-`DCL-venv\Scripts\activate`
+
+    `python -m venv DCL-venv`\
+    `DCL-venv\Scripts\activate`
+
 5. Install the necessary packages in the environment
-`python -m pip install -r Drawing-command-line\requirements.txt`
+
+    `python -m pip install -r Drawing-command-line\requirements.txt`
+
 6. Navigate to the `Drawing-command-line\Drawing-command-line` folder
-`cd Drawing-command-line\Drawing-command-line`
+
+    `cd Drawing-command-line\Drawing-command-line`
+
 7. Below in the documentation you need to run files `Drawing-command-line/main-drawPicture.py` and `Drawing-command-line/main.py`, this is done like this:
-`python main-drawPicture.py`
-`python main.py`
+
+    `python main-drawPicture.py`\
+    `python main.py`
 
 ## Edit application settings
 1. Open `Drawing-command-line/settings/settings.json`
