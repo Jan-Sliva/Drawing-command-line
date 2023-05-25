@@ -172,4 +172,4 @@ The recommended version of Python is 3.10.10
 
 ## Editing symbols
 1. The symbols are stored in the `Drawing-command-line/pictures` folder, here you can edit them
-2. The application reads the images from this folder every time it runs, and uses a neural network to encode them into a 32-element vector
+2. The application reads the images from this folder every time it starts, and uses a neural network to encode them into a 32-element vector
